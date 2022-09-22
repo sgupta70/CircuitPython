@@ -28,22 +28,21 @@ while True:
         g = 0 
         b = 0 
         print("<5")
-    elif distance < 20: ## if the distance is greater than 5cm and less than 20cm then the light turns green 
-        r = 0
-        b = 0
-        g = 255
-        r = int(r) 
-        g = int(g)
-        b = int(b)
+    elif distance < 25 and distance > 20: ## if the distance is greater than 5cm and less than 20cm the led goes from red to blue  
+        r = int(simpleio.map_range(distance 5, 20, 255, 0))
+        g = int(0)
+        b = int(simpleio.map_range(distance 5, 20, 0, 255))
         print(">5<20")
-    else: ## if the distance is greater than 20cm then the light turns blue 
+    elif distance < 20 and distance > 35: ## if the distance is greater than 20cm and less than 30cm the led goes from blue to green 
+        r = int(0)
+        g = int(simpleio.map_range(distance 20, 35, 0, 255))
+        b = int(simpleio.map_range(distance 20, 35, 255, 0))
+        print(">20<35")
+    elif distance > 35: ## if the distance is greater than 35cm the led is green 
         r = 0 
-        g = 0 
-        b = 255 
-        r = int(r) 
-        g = int(g)
-        b = int(b)
-        print(">20")
+        g = 255
+        b = 0
+        print(">35")
 
     
     
