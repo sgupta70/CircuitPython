@@ -36,7 +36,7 @@ while True:
 ### Evidence
 
 
-![neopixel]
+![neopixel.jpg]
 
 
 And here is how you should give image credit to someone, if you use their work:
