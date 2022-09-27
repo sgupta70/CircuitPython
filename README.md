@@ -92,6 +92,7 @@ This assignment
 ## CircuitPython_DistanceSensor
 
 ### Description & Code
+For this assignment we were required to use the HC-SR04 sensor to measure the distance from an object, depending on the distance the LED would change colors going through the colors from red to green to blue. 
 
 ```
 ##Sahana Gupta
@@ -156,7 +157,7 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 ### Wiring
 ![Screenshot (3)](https://user-images.githubusercontent.com/71406903/192614570-c0fe8ff7-9f1b-4d20-8237-f645cfd45fa3.png)
 ### Reflection
-
+In this assignment I first had to get my HC-SR04 sensor to calculate the distance from an object, then I added on using some code from the Hello_CircuitPython assignment to turn on the LED, and finally using a map function the LED would go through all the colors. IN the beginning I wasn't sure how to do this assignment 
 
 
 
@@ -164,7 +165,7 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 ## CircuitPython_LCD
 
 ### Description & Code
-
+For this assignment we had to use our LCD screen as an output and have two inputs such as buttons. Every time one of the buttons is pushed the LCD starts counting up, when the other button is pushed it starts counting down. 
 ```
 ## Sahana Gupta 
 ## CircuitPython LCD
