@@ -1,28 +1,132 @@
-# CPyProjectTemplate
-Put a description for your project here!
-This repo is a template VS code project for CircuitPython projects that automatically uploads your code to the board when you press F5. Requires F5Anything extension.
-## Use
-### Every new project:
-1. Make a GitHub account if you don't have one with your normal school credentials and sign into it.
-2. Click the big green Use This Template button at the top of this page.
-3. Name the new repository something appropriate to the purpose of your project (Your first one should probably be named `CircuitPython`).
-4. Hit "Create repository from template." (The default settings should be fine.)
-5. Open VS Code on your machine. Click Clone Repository.
-6. Paste in the link to the new repository you've just created from the template and hit enter.
-7. For the location, select the "STUDENT" drive if you have it or the document folder if you don't.
-8. Hit "Open Cloned Directory."
-9. Install the reccomended extensions when you get that popup in the lower right corner.
-### To commit from VS Code:
-1. Go to the little branch icon in the left bar of VS Code.
-2. Click the + icon next  to the files you want to commit.
-3. Write a message that descibes your changes in the "Message" box and hit commit.
-4. If you get an error about user.name and user.email, see the next section.
-5. Click the "Sync changes" button.
-### If you get an error about user.name and user.email
-1. Open Git Bash from the Windows Search Bar.
-2. FIlling in your actual information, run the following commands one line at a time. The paste shortcut is `Shift+Insert` or you can right click then hit paste. Spelling must match exactly:
+# CircuitPython
+
+## Table of Contents
+* [Table of Contents](#TableOfContents)
+* [Hello_CircuitPython](#Hello_CircuitPython)
+* [CircuitPython_Servo](#CircuitPython_Servo)
+* [CircuitPython_LCD](#CircuitPython_LCD)
+* [NextAssignmentGoesHere](#NextAssignment)
+---
+
+## Hello_CircuitPython
+
+### Description & Code
+For this assignment we were assigned to make the neopixel on our metro express turn blue. 
+
 ```
-git config --global user.name YOURUSERNAME
-git config --global user.email YOURSCHOOLEMAIL
+#Sahana Gupta 
+#Hello CircuitPython
+# this code makes the LED light on the arduino turn on to a color of our choice 
+
+import board
+import neopixel
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = 0.1
+
+
+print("Make it blue!")
+
+while True:
+    dot.fill((255, 51, 153))
+
 ```
-3. Return to step 3 of the previous section.
+
+
+### Evidence
+
+
+![spinningMetro_Optimized](https://user-images.githubusercontent.com/54641488/192549584-18285130-2e3b-4631-8005-0792c2942f73.gif)
+
+
+And here is how you should give image credit to someone, if you use their work:
+
+Image credit goes to [Rick A](https://www.youtube.com/watch?v=dQw4w9WgXcQ&scrlybrkr=8931d0bc)
+
+
+
+### Wiring
+There were no wires needed for this project, just the Metro Express. 
+
+### Reflection
+This was the first assignment using CircuitPython and in the beginning I was a little unsure. 
+
+
+
+
+## CircuitPython_Servo
+
+### Description & Code
+In this assignment we had to 
+```
+#Sahana Gupta
+#CircuitPython Servo 
+#This code will turn on a motor and make it rotate 180 degrees back and forth
+
+"""CircuitPython Essentials Servo standard servo example"""
+import time 
+import board 
+import pwmio
+from adafruit_motor import servo
+
+
+pwm = pwmio.PWMOut(board.D3, duty_cycle=2 ** 15, frequency=50) #using the PWMOut function within the pwmio library 
+
+
+my_servo = servo.Servo(pwm)
+
+while True:
+    for angle in range(0, 180, 5): #the servo rotates 180 degrees 
+        my_servo.angle = angle
+        time.sleep(0.05) #pauses for 0.05 seconds
+    for angle in range(180, 0, -5): #the servo rotates 180 degrees ther other way 
+        time.sleep(0.05) #pauses for 0.05 seconds
+
+```
+
+### Evidence
+
+Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+### Wiring
+
+### Reflection
+
+
+
+
+## CircuitPython_LCD
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
+### Wiring
+
+### Reflection
+
+
+
+
+
+## NextAssignment
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
