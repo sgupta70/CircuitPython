@@ -4,8 +4,9 @@
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
+* [CircuitPython Distance Sensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-* [NextAssignmentGoesHere](#NextAssignment)
+
 ---
 
 ## Hello_CircuitPython
@@ -228,7 +229,8 @@ while True:
 ```
 
 ### Evidence
-![LCD.MOV](https://drive.google.com/file/d/1r9t-RCMkPbK9uwj-muDTGOO9x-UGuBon/view?usp=sharing)
+![LCD](https://drive.google.com/file/d/1r9t-RCMkPbK9uwj-muDTGOO9x-UGuBon/view?usp=sharing)
+
 ### Wiring
 ![Screenshot (7)](https://user-images.githubusercontent.com/71406903/192619545-b9e1aba2-fb2a-42be-97bb-c61d9734c652.png)
 
