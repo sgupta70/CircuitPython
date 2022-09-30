@@ -229,7 +229,7 @@ while True:
 ```
 
 ### Evidence
-![LCD](
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71406903/193345352-4096a970-db47-4673-9544-dc9b4a12b061.gif)
 
 ### Wiring
 ![Screenshot (7)](https://user-images.githubusercontent.com/71406903/192619545-b9e1aba2-fb2a-42be-97bb-c61d9734c652.png)
