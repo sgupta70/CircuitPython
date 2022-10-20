@@ -86,7 +86,7 @@ while True:
 ### Wiring
 ![Screenshot (5)](https://user-images.githubusercontent.com/71406903/192617309-7d16d43c-7788-429a-b7c6-52362cc06706.png)
 ### Reflection
-This assignment 
+This assignment was not anything too knew for me. We did a lot of things with servos last year soit was relatively easy. I knew how to wire my servo up the only thing I needed to brush up on was the code. Since we switched from arduino to CircuitPython I had to do a little research on what I was doing but after some trial and error I was able to figure it all out and my servo moved back and forth 180 degress depending on the button that was pushed. 
 
 
 
@@ -159,8 +159,7 @@ Image Credit does to [Gabbi D](https://github.com/gdaless20/Circuitpython)
 ### Wiring
 ![Screenshot (3)](https://user-images.githubusercontent.com/71406903/192614570-c0fe8ff7-9f1b-4d20-8237-f645cfd45fa3.png)
 ### Reflection
-In this assignment I first had to get my HC-SR04 sensor to calculate the distance from an object, then I added on using some code from the Hello_CircuitPython assignment to turn on the LED, and finally using a map function the LED would go through all the colors. IN the beginning I wasn't sure how to do this assignment 
-
+In this assignment I first had to get my HC-SR04 sensor to calculate the distance from an object, then I added on using some code from the Hello_CircuitPython assignment to turn on the LED, and finally using a map function the LED would go through all the colors. In the beginning I wasn't sure how to do this assignment, I copied some code over from the last assignment to get the neopixel running. Then I needed to figure out how the turn on my sensor, this part wasn't too hard because I remembered how to code one last year. After doing this it go t a little more difficult and I had to find out how to make it go through all the colors. Doing some research about simpleio I figured out how to write a proper map function. As some trial and error and some help from my neighbors and my teacher I was able to get the neopixel changing colors. 
 
 
 
@@ -235,3 +234,4 @@ while True:
 ![Screenshot (7)](https://user-images.githubusercontent.com/71406903/192619545-b9e1aba2-fb2a-42be-97bb-c61d9734c652.png)
 
 ### Reflection
+This assignment was a little new to me because I have never coded an LCD screen before, but after some research I realized it was nothing too difficult. I first had to wire up the LCD and they gave us code that would get our LCD screen turned out. After finishing that I went and serached on how to count on a LCD screen. After putting in different code and getting help from those around me I finally got it to work. My LCD screen would count up everytime one button was pressed and then count back down when the other button was pressed.
