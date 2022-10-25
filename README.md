@@ -83,7 +83,7 @@ while True:
 ### Evidence
 ![2 button servo](https://user-images.githubusercontent.com/71406905/193344424-dd582054-5bf3-43e8-9169-ccd71b0e2fc1.gif)
 
-Image Credit does to [Kathryn L](https://github.com/klenert17/CircuitPython)
+Image Credit goes to [Kathryn L](https://github.com/klenert17/CircuitPython)
 
 
 ### Wiring
