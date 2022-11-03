@@ -157,7 +157,7 @@ while True:
 ### Evidence
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/71349797/134724959-4f1d69a2-bb28-4c98-8dd7-6bff58e07b80.gif)
 
-Image Credit does to [Gabbi D](https://github.com/gdaless20/Circuitpython)
+Image Credit goes to [Gabbi D](https://github.com/gdaless20/Circuitpython)
 
 ### Wiring
 ![Screenshot (3)](https://user-images.githubusercontent.com/71406903/192614570-c0fe8ff7-9f1b-4d20-8237-f645cfd45fa3.png)
@@ -271,7 +271,9 @@ while True:
 ```
 
 ### Evidence
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71406903/193345352-4096a970-db47-4673-9544-dc9b4a12b061.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/71406905/199819183-076ce0da-a1c4-4b80-8caf-3c1f82da6628.gif)
+
+Image Credit goes to [Kathryn L](https://github.com/klenert17)
 
 ### Wiring
 ![Screenshot (20)](https://user-images.githubusercontent.com/71406903/199816164-0d8acaec-c008-4044-9d96-956547085bb4.png)
