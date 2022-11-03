@@ -6,7 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython Distance Sensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-
+* [CircuitPython_MotorControl](#CircuitPython_MotorControl)
 ---
 
 ## Hello_CircuitPython
@@ -238,3 +238,43 @@ while True:
 
 ### Reflection
 This assignment was a little new to me because I have never coded an LCD screen before, but after some research I realized it was nothing too difficult. I first had to wire up the LCD and they gave us code that would get our LCD screen turned out. After finishing that I went and serached on how to count on a LCD screen. After putting in different code and getting help from those around me I finally got it to work. My LCD screen would count up everytime one button was pressed and then count back down when the other button was pressed.
+
+
+## CircuitPython_MotorControl
+
+### Description & Code
+For this assignment we were give a DC Motor,6xAA Battery Pack, PN2222 Transistor and a Diode, to make the motor spin corresponding to the potentiometer. As the potentiometer values increase the motor will increase its speed. 
+```
+## Sahana Gupta 
+## CircuitPython Motor Control
+## Sahana Gupta 
+
+import time
+from time import sleep
+import board
+import simpleio
+from analogio import AnalogIn 
+import pwmio  
+
+analog_in = AnalogIn(board.A1) #potentionmeter pin
+pin_out = pwmio.PWMOut(board.D8,duty_cycle=65535,frequency=5000)
+
+while True:
+
+  sensor_value = analog_in.value
+  # Map the sensor's range from 0<=sensor_value<=255 to 0<=sensor_value<=1023
+  mapped_value = int(simpleio.map_range(sensor_value, 0, 65535, 0, 255))
+  
+  pin_out.duty_cycle = sensor_value
+  print("mapped sensor value: ", sensor_value)
+  time.sleep(0.1)
+```
+
+### Evidence
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71406903/193345352-4096a970-db47-4673-9544-dc9b4a12b061.gif)
+
+### Wiring
+![Screenshot (20)](https://user-images.githubusercontent.com/71406903/199816164-0d8acaec-c008-4044-9d96-956547085bb4.png)
+
+### Reflection
+Last year we did the exact same assignment but we did it using arduino. The wiring was the exact same so that was very simple for me, however the code was different. Using what I wrote last year and help from friends around me I was able to write to code to make the motor increase its speed as the potentiometer gets turned up. Eventually after a couple tries and adding in new code I was able to get it to work. 
