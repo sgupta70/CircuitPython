@@ -280,3 +280,58 @@ Image Credit goes to [Kathryn L](https://github.com/klenert17)
 
 ### Reflection
 Last year we did the exact same assignment but we did it using arduino. The wiring was the exact same so that was very simple for me, however the code was different. Using what I wrote last year and help from friends around me I was able to write to code to make the motor increase its speed as the potentiometer gets turned up. Eventually after a couple tries and adding in new code I was able to get it to work. 
+
+## CircuitPython_TemperatureLCD
+
+### Description & Code
+
+```
+## Sahana Gupta 
+## CircuitPython Termperature LCD
+## Sahana Gupta 
+
+import board
+import analogio
+import time
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+# get and i2c object
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+
+TMP36_PIN = board.A0
+
+def tmp36_temperature_C(analogin):
+    millivolts = analogin.value * (analogin.reference_voltage * 1000 / 65535)
+    return (millivolts - 500) / 10
+
+
+# Create TMP36 analog input.
+tmp36 = analogio.AnalogIn(TMP36_PIN)
+
+while True:
+    # Read the temperature in Celsius.
+    temp_C = tmp36_temperature_C(tmp36)
+    # Convert to Fahrenheit.
+    temp_F = (temp_C * 9/5) + 32
+    print("Temperature: {}C {}F".format(temp_C, temp_F))
+    lcd.clear()
+    lcd.print("Temperature:\n{:.2f}C {:.2f}F".format(temp_C, temp_F))
+    time.sleep(1.0)
+
+```
+
+### Evidence
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/71406905/199819183-076ce0da-a1c4-4b80-8caf-3c1f82da6628.gif)
+
+Image Credit goes to [Kathryn L](https://github.com/klenert17)
+
+### Wiring
+![Screenshot (25)](https://user-images.githubusercontent.com/71406903/225115030-0dfc109a-93cb-4c2f-8c1f-b315250cb7a0.png)
+
+### Reflection
+
