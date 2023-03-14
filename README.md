@@ -284,6 +284,7 @@ Last year we did the exact same assignment but we did it using arduino. The wiri
 ## CircuitPython_TemperatureLCD
 
 ### Description & Code
+For this assignment we were assigned to display the temperature in both Celsius and Fahrenhiet on an LCD screen. We used a TMP36 temperature sensor, which is an easy way to measure temperature using CircuitpPython. 
 
 ```
 ## Sahana Gupta 
