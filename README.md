@@ -14,7 +14,7 @@
 ## Hello_CircuitPython
 
 ### Description & Code
-For this assignment we were assigned to learn the new CircuitPython cod and make the neopixel on our Metro Express turn blue. 
+For this assignment we were assigned to learn the new CircuitPython code and make the neopixel on our Metro Express turn blue. 
 
 ```
 #Sahana Gupta 
