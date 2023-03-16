@@ -335,4 +335,5 @@ Image Credit goes to [Kathryn L](https://github.com/klenert17)
 ![Screenshot (25)](https://user-images.githubusercontent.com/71406903/225115030-0dfc109a-93cb-4c2f-8c1f-b315250cb7a0.png)
 
 ### Reflection
+This assignment wasn't too hard for me because we had already done an lcd assignment so using code from that assignment and researdching what a thermistor was I was able to get an understanding of what to do. 
 
