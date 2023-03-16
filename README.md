@@ -327,7 +327,7 @@ while True:
 ```
 
 ### Evidence
-![225113744-10f176f0-819f-4b55-be77-3b80769f1354](https://user-images.githubusercontent.com/71406903/225729107-fff0c094-5e6e-4f4b-9322-e537bdb0a4d9.jpg))
+![225113744-10f176f0-819f-4b55-be77-3b80769f1354](https://user-images.githubusercontent.com/71406903/225729107-fff0c094-5e6e-4f4b-9322-e537bdb0a4d9.jpg)
 
 Image Credit goes to [Kathryn L](https://github.com/klenert17)
 
