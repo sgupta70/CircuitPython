@@ -7,6 +7,8 @@
 * [CircuitPython Distance Sensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [CircuitPython_MotorControl](#CircuitPython_MotorControl)
+* [CircuitPython_TemperatureLCD](#CircuitPython_TemperatureLCD)
+
 ---
 
 ## Hello_CircuitPython
