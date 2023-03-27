@@ -339,3 +339,93 @@ Image Credit goes to [Kathryn L](https://github.com/klenert17)
 ### Reflection
 This assignment wasn't too hard for me because we had already done an lcd assignment so using code from that assignment and researdching what a thermistor was I was able to get an understanding of what to do. Also a big help from [River L](https://github.com/rivques/CircuitPython/blob/master/tmp36.py), his code helped me get a good understanding of how to write my code. The wiring was super simple I just had to connect my lcd to the metro express and the thermistor which was super simple to wire up. 
 
+
+## CircuitPython_RotaryEncoder
+
+### Description & Code
+For this assignment we were assigned to use a rotary encoder to change which led would light up, like a stop light. As teh knob is turned it will go through green, yellow, and red and it would display go, caution, and stop on an LCD screen. 
+
+```
+## Sahana Gupta 
+## CircuitPython Rotary Encoder
+import time
+import rotaryio
+import board
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+from digitalio import DigitalInOut, Direction, Pull
+
+
+encoder = rotaryio.IncrementalEncoder(board.D3, board.D2)
+last_position = 0
+last_position = 0
+btn = DigitalInOut(board.D4)
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP
+state = 0
+Buttonyep = 1
+
+
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+
+ledGreen = DigitalInOut(board.D8) #greenled is in pin 8 
+ledYellow = DigitalInOut(board.D9) #yellowled is in pin 9 
+ledRed = DigitalInOut(board.D10) #redled is in pin 10 
+ledGreen.direction = Direction.OUTPUT
+ledYellow.direction = Direction.OUTPUT
+ledRed.direction = Direction.OUTPUT
+
+
+while True:
+    position = encoder.position
+    if position != last_position:
+        if position > last_position:
+            state = state + 1
+        elif position < last_position:
+            state = state - 1
+        if state > 2: #the led will be red
+            state = 2
+        if state < 0: #the led will be green 
+            state = 0
+        print(state)
+        if state == 0: #if the led is green the lcd will print go 
+            lcd.clear()
+            lcd.set_cursor_pos(0, 0)
+            lcd.print("Go")
+            ledGreen.value = True
+            ledRed.value = False
+            ledYellow.value = False
+        elif state == 1: #if the led is yellow the lcd will print caution
+            lcd.clear()
+            lcd.set_cursor_pos(0, 0)
+            lcd.print("Caution")
+            ledYellow.value = True
+            ledRed.value = False
+            ledGreen.value = False
+        elif state == 2:  #if the led is red the lcd will print stop
+            lcd.clear()
+            lcd.set_cursor_pos(0, 0)
+            lcd.print("Stop")
+            ledRed.value = True
+            ledGreen.value = False
+            ledYellow.value = False
+    if btn.value == 1:
+        time.sleep(.1)
+        Buttonyep = 1
+    last_position = position
+
+```
+
+### Evidence
+![225113744-10f176f0-819f-4b55-be77-3b80769f1354](https://user-images.githubusercontent.com/71406903/225729107-fff0c094-5e6e-4f4b-9322-e537bdb0a4d9.jpg)
+
+Image Credit goes to [Kathryn L](https://github.com/klenert17)
+
+### Wiring
+![Screenshot (25)](https://user-images.githubusercontent.com/71406903/225115030-0dfc109a-93cb-4c2f-8c1f-b315250cb7a0.png)
+
+### Reflection
+This assignment wasn't too bad, but it was new to me because I've never used a rotary encoder before. I was able to use some of my code from th elast assignment, specifically the LCD code I just had to change which words would be printed. The rotary encoder is pretty simple though it's pretty similar to a potentiometer. 
+
