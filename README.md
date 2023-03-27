@@ -8,6 +8,8 @@
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [CircuitPython_MotorControl](#CircuitPython_MotorControl)
 * [CircuitPython_TemperatureLCD](#CircuitPython_TemperatureLCD)
+*  [CircuitPython_RotaryEncoder](#CircuitPython_RotaryEncoder)
+
 
 ---
 
