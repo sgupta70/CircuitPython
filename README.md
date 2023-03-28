@@ -365,7 +365,7 @@ btn = DigitalInOut(board.D4)
 btn.direction = Direction.INPUT
 btn.pull = Pull.UP
 state = 0
-Buttonyep = 1
+Button = 1
 
 
 i2c = board.I2C()
@@ -415,7 +415,7 @@ while True:
             ledYellow.value = False
     if btn.value == 1:
         time.sleep(.1)
-        Buttonyep = 1
+        Button = 1
     last_position = position
 
 ```
