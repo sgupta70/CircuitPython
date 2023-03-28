@@ -426,7 +426,7 @@ while True:
 Image Credit goes to [Kathryn L](https://github.com/klenert17)
 
 ### Wiring
-![Screenshot (25)](https://user-images.githubusercontent.com/71406903/225115030-0dfc109a-93cb-4c2f-8c1f-b315250cb7a0.png)
+![image](https://user-images.githubusercontent.com/71406903/228335727-5d822386-a018-4032-afe1-a60f5083e702.png)
 
 ### Reflection
 This assignment wasn't too bad, but it was new to me because I've never used a rotary encoder before. I was able to use some of my code from th elast assignment, specifically the LCD code I just had to change which words would be printed. The rotary encoder is pretty simple though it's pretty similar to a potentiometer. 
