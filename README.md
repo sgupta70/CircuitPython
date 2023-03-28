@@ -421,9 +421,8 @@ while True:
 ```
 
 ### Evidence
-![225113744-10f176f0-819f-4b55-be77-3b80769f1354](https://user-images.githubusercontent.com/71406903/225729107-fff0c094-5e6e-4f4b-9322-e537bdb0a4d9.jpg)
+![image](https://user-images.githubusercontent.com/71406903/228336203-d47e6a6f-0f2c-445f-aac8-f50d56d38ef1.png)
 
-Image Credit goes to [Kathryn L](https://github.com/klenert17)
 
 ### Wiring
 ![image](https://user-images.githubusercontent.com/71406903/228335727-5d822386-a018-4032-afe1-a60f5083e702.png)
