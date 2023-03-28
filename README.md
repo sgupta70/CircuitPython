@@ -430,3 +430,57 @@ while True:
 ### Reflection
 This assignment wasn't too bad, but it was new to me because I've never used a rotary encoder before. I was able to use some of my code from th elast assignment, specifically the LCD code I just had to change which words would be printed. The rotary encoder is pretty simple though it's pretty similar to a potentiometer. 
 
+## CircuitPython_Photointerrupter
+
+### Description & Code
+For this assignment we were assigned to use a rotary encoder to change which led would light up, like a stop light. As teh knob is turned it will go through green, yellow, and red and it would display go, caution, and stop on an LCD screen. 
+
+```
+## Sahana Gupta 
+## CircuitPython Photointerrupter
+import board
+import time
+import digitalio
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+from digitalio import DigitalInOut, Direction, Pull
+
+i2c = board.I2C()
+btn = DigitalInOut(board.D8)
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+cur_state = True
+prev_state = True
+buttonPress = -1
+now = time.monotonic()  # Time in seconds since power on
+
+
+while True: 
+    if (now + 4) < time.monotonic():
+        print ("times up " + str(now) + " " + str(buttonPress))
+        now = time.monotonic()
+        buttonPress = 0
+    
+    cur_state = btn.value
+    if cur_state != prev_state:
+        if not cur_state:
+            buttonPress = buttonPress + 1
+            lcd.clear()
+            lcd.set_cursor_pos(0,0)
+            lcd.print("The number of interrupts is: " + str(buttonPress))
+    prev_state = cur_state
+
+```
+
+### Evidence
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/71406903/228336833-94f838ac-e235-4cf6-94c5-a5adefe1340a.gif)
+
+
+### Wiring
+![image](https://user-images.githubusercontent.com/71406903/228335727-5d822386-a018-4032-afe1-a60f5083e702.png)
+
+### Reflection
+This assignment wasn't too bad, but it was new to me because I've never used a rotary encoder before. I was able to use some of my code from th elast assignment, specifically the LCD code I just had to change which words would be printed. The rotary encoder is pretty simple though it's pretty similar to a potentiometer. 
