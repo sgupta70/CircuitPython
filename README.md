@@ -433,7 +433,7 @@ This assignment wasn't too bad, but it was new to me because I've never used a r
 ## CircuitPython_Photointerrupter
 
 ### Description & Code
-For this assignment we were assigned to use a rotary encoder to change which led would light up, like a stop light. As teh knob is turned it will go through green, yellow, and red and it would display go, caution, and stop on an LCD screen. 
+We were assigned to count the amount of times a photointerrupted is interrupted within four seconds. Thhe amount of times will count up on an lcd screen and then every four seconds it will restart. 
 
 ```
 ## Sahana Gupta 
@@ -483,4 +483,4 @@ while True:
 ![image](https://user-images.githubusercontent.com/71406903/228350137-55d7ddd0-c263-4111-8555-3bfe5479992a.png)
 
 ### Reflection
-This assignment wasn't too bad, but it was new to me because I've never used a rotary encoder before. I was able to use some of my code from th elast assignment, specifically the LCD code I just had to change which words would be printed. The rotary encoder is pretty simple though it's pretty similar to a potentiometer. 
+This assignment was pretty simple, using old code I was able to figure it out pretty quickly. A photointerupter is coded just like a regular button so that code was the same. 
