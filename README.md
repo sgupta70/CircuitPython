@@ -434,7 +434,7 @@ This assignment wasn't too bad, but it was new to me because I've never used a r
 ## CircuitPython_Photointerrupter
 
 ### Description & Code
-We were assigned to count the amount of times a photointerrupted is interrupted within four seconds. Thhe amount of times will count up on an lcd screen and then every four seconds it will restart. 
+We were assigned to get a photointerrupter to count the amount of times it was interrupted in four seconds and then reset. 
 
 ```
 ## Sahana Gupta 
