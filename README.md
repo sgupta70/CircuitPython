@@ -8,7 +8,8 @@
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [CircuitPython_MotorControl](#CircuitPython_MotorControl)
 * [CircuitPython_TemperatureLCD](#CircuitPython_TemperatureLCD)
-*  [CircuitPython_RotaryEncoder](#CircuitPython_RotaryEncoder)
+* [CircuitPython_RotaryEncoder](#CircuitPython_RotaryEncoder)
+* [CircuitPython_Photointerrupter](#CircuitPython_Photointerrupter)
 
 
 ---
@@ -478,9 +479,8 @@ while True:
 ### Evidence
 ![ezgif com-crop](https://user-images.githubusercontent.com/71406903/228939802-cae7d630-60d5-4e05-9306-a97065c7b6c7.gif)
 
-
 ### Wiring
 ![image](https://user-images.githubusercontent.com/71406903/228350137-55d7ddd0-c263-4111-8555-3bfe5479992a.png)
 
 ### Reflection
-This assignment was pretty simple, using old code I was able to figure it out pretty quickly. A photointerupter is coded just like a regular button so that code was the same. 
+This assignment was pretty simple, using old code I was able to figure it out pretty quickly. A photointerupter is coded just like a regular button so that code was the same. I was able to get the photointerrupter working and counting up on the lcd screen. I then needed to figure out how to get the photointerrupter to count the amount of time it was interrupted for only four seconds and then reset, this part was a liuttle harder for me but Mr. H helped me out and I realized it was a super simple concept. Overall this assignment went well and it really helped me learn more about code.
