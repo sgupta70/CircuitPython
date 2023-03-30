@@ -476,7 +476,7 @@ while True:
 ```
 
 ### Evidence
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/71406903/228336833-94f838ac-e235-4cf6-94c5-a5adefe1340a.gif)
+![ezgif com-crop](https://user-images.githubusercontent.com/71406903/228939802-cae7d630-60d5-4e05-9306-a97065c7b6c7.gif)
 
 
 ### Wiring
